@@ -1,0 +1,115 @@
+﻿<Window x:Class="PoliclinicVolchkov.Views.Windows.Raspisanie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliclinicVolchkov.Views.Windows"
+        mc:Ignorable="d"
+        Title="Raspisanie" Height="291" Width="400">
+    <Grid Margin="0,0,0,-28">
+        <StackPanel Margin="10,10,10,10">
+            <TextBlock Text="Расписание" HorizontalAlignment="Center"/>
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
+                <TextBlock Text="Время работы"/>
+                <Border Width="10"/>
+                <DatePicker Name="EventDateDp"/>
+                <Border Width="20"/>
+                <Border Width="10"/>
+            </StackPanel>
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="ФИО"/>
+                <Border Width="10"/>
+                <TextBox Name="EventNameTb" Width="163"/>
+            </StackPanel>
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Участок"/>
+                <Border Width="10"/>
+                <TextBox Name="Addrestb" Width="159"/>
+            </StackPanel>
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Дата приема"/>
+                <Border Width="10"/>
+                <DatePicker Name="RabotDtp"  Width="159"/>
+            </StackPanel>
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Номер кабинета"/>
+                <Border Width="10"/>
+                <TextBox Name="PolCmb" Width="148"/>
+            </StackPanel>
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Width="10"/>
+            </StackPanel>
+
+
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Width="10"/>
+            </StackPanel>
+
+            <Border Height="10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Width="10"/>
+            </StackPanel>
+
+            <Border Height="8"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Width="10"/>
+            </StackPanel>
+
+            <Border Height="10">
+                <Button x:Name="OkBtn" Click="OkBtn_Click" Content="Ок" Width="102" Margin="0,-9,0,-1"/>
+            </Border>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Width="100"/>
+            </StackPanel>
+
+            <StackPanel Name="JuryGrid">
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="20"/>
+                </StackPanel>
+                <Border Height="20"/>
+
+
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="20"/>
+                </StackPanel>
+                <Border Height="20"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="20"/>
+                </StackPanel>
+                <Border Height="20"/>
+            </StackPanel>
+
+            <Border Height="20"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Border Width="100"/>
+                <Border Width="100"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

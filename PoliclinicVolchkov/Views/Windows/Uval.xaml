@@ -1,0 +1,110 @@
+﻿<Window x:Class="PoliclinicVolchkov.Views.Windows.Uval"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliclinicVolchkov.Views.Windows"
+        mc:Ignorable="d"
+        Title="Uval" Height="371" Width="359">
+    <StackPanel Margin="10">
+        <TextBlock Text="Добавить мероприятие"/>
+
+        <Border Height="10"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock Text="Дата увольнение"/>
+            <Border Width="10"/>
+            <DatePicker Name="EventDateDp"/>
+            <Border Width="20"/>
+            <Border Width="10"/>
+        </StackPanel>
+
+        <Border Height="10"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="ФИО"/>
+            <Border Width="10"/>
+            <TextBox Name="EventNameTb" Width="163"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text=""/>
+            <Border Width="10"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Пол"/>
+            <Border Width="10"/>
+            <TextBox Name="PolCmb" Width="148"/>
+        </StackPanel>
+
+        <Border Height="10"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Возраст"/>
+            <Border Width="10"/>
+            <TextBox Name="Agetb" Width="159"/>
+        </StackPanel>
+
+
+
+        <Border Height="10"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Стаж"/>
+            <Border Width="10"/>
+            <TextBox Name="BolCmb" Width="157" />
+        </StackPanel>
+
+        <Border Height="10"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Страховой полис"/>
+            <Border Width="10"/>
+            <TextBox Name="PolicPb" Width="159"/>
+        </StackPanel>
+
+        <Border Height="10"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Причина"/>
+            <Border Width="10"/>
+            <TextBox Name="JalobPB" Width="159"/>
+        </StackPanel>
+
+        <Border Height="10"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Заведующий отделением"/>
+            <Border Width="100"/>
+        </StackPanel>
+
+        <StackPanel Name="JuryGrid">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="EventNameTb1" Width="163"/>
+                <Border Width="20"/>
+            </StackPanel>
+            <Border Height="20"/>
+
+
+            <StackPanel Orientation="Horizontal">
+                <Border Width="20"/>
+            </StackPanel>
+            <Border Height="20">
+                <Button x:Name="OkBtn" Click="OkBtn_Click" Content="Ок" Width="102"/>
+            </Border>
+
+            <StackPanel Orientation="Horizontal">
+                <Border Width="20"/>
+            </StackPanel>
+            <Border Height="20"/>
+        </StackPanel>
+
+        <Border Height="20"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Border Width="100"/>
+            <Border Width="100"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
